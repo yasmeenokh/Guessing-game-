@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    color: #822659;
+    padding: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: #822659;
+}
+
+main ul li:nth-child(odd) {
+    background-color: #c6a9a3;
+    padding: 5px;
+    color: #383e56;
+}
+main ul li:nth-child(even) {
+    background-color: #99bbad;
+    padding: 5px;
+    color: #351f39;
+}
+
+.intro {
+    padding: 10px;
+    text-align: center;
+    color: #0f1123;
+}
+
