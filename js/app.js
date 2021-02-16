@@ -7,7 +7,7 @@ let courseCompletion = prompt ('Do you think i will finish this course?');
 
 courseCompletion= courseCompletion.toLowerCase()
 
-if(courseCompletion == 'yes'  || courseCompletion == 'y') {
+if(courseCompletion === 'yes'  || courseCompletion === 'y') {
     alert('Thank you for your good expectation');
 }   
 else { 
@@ -17,7 +17,7 @@ else {
 let gamingLove = prompt ('Do you think i enjoy gaming?'); 
 // console.log(gamingLove);
 
-if(gamingLove.toLowerCase() == 'yes' || gamingLove.toLowerCase() == 'y') {
+if(gamingLove.toLowerCase() === 'yes' || gamingLove.toLowerCase() === 'y') {
     alert('You are so mistaken');
 }   
 else { 
@@ -27,7 +27,7 @@ else {
 let firstImp = prompt ('Did i leave a good first impression?'); 
 // console.log(firstImp);
 
-if(firstImp.toLowerCase() == 'yes' || firstImp.toLowerCase() == 'y') {
+if(firstImp.toLowerCase() === 'yes' || firstImp.toLowerCase() === 'y') {
     alert('Glad to hear that, it was mutual');
 }   
 else {
@@ -37,7 +37,7 @@ else {
 let myPhobia = prompt ('To your knowledge do i have any phobias?'); 
 // console.log(myPhobia); 
 
-if(myPhobia.toLowerCase() == 'yes' || myPhobia.toLowerCase() == 'y') {
+if(myPhobia.toLowerCase() === 'yes' || myPhobia.toLowerCase() === 'y') {
     alert('Intersting, how did you know?');
 }   
 else {
@@ -47,7 +47,7 @@ else {
 let tryNew = prompt('Do i like to try new things?'); 
 // console.log(tryNew);
 
-if (tryNew.toLowerCase()== 'yes' || tryNew.toLowerCase()== 'y') {
+if (tryNew.toLowerCase()=== 'yes' || tryNew.toLowerCase()=== 'y') {
     alert('you got that right');
 }   
 else {
