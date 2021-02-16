@@ -1,7 +1,10 @@
 'use strict';
 let counter = 0; 
 let userName = prompt('What is your name?');
-alert('We are glad to have you  ' + userName);
+while (userName == null || userName == '') {
+    userName = prompt("please enter your name");
+};
+alert('We are glad to have you  ' + userName +  ' 😀 ');
 
 let courseCompletion = prompt('Do you think i will finish this course?');
 // console.log(courseCompletion); 
@@ -9,12 +12,12 @@ let courseCompletion = prompt('Do you think i will finish this course?');
 courseCompletion = courseCompletion.toLowerCase()
 
 if (courseCompletion === 'yes' || courseCompletion === 'y') {
-    alert('Thank you for your good expectation');
+    alert('Thank you for your good expectation 😄');
     counter++;
 }
 
 else {
-    alert('Ohh, why do you think that!!');
+    alert('Ohh, why do you think that 😔!!');
 }
 
 let gamingLove = prompt('Do you think i enjoy gaming?');
@@ -33,19 +36,19 @@ let firstImp = prompt('Did i leave a good first impression?');
 // console.log(firstImp);
 
 if (firstImp.toLowerCase() === 'yes' || firstImp.toLowerCase() === 'y') {
-    alert('Glad to hear that, it was mutual');
+    alert('Glad to hear that, it was mutual 🙈');
     counter++;
     
 }
 else {
-    alert('sorry to hear that, where did i go wrong?');
+    alert('sorry to hear that, where did i go wrong 💔?');
 }
 
 let myPhobia = prompt('To your knowledge do i have any phobias?');
 // console.log(myPhobia); 
 
 if (myPhobia.toLowerCase() === 'yes' || myPhobia.toLowerCase() === 'y') {
-    alert('Intersting, how did you know?');
+    alert('Intersting 🙀, how did you know?');
     counter++;
 }
 else {
@@ -68,11 +71,11 @@ let myAge = prompt('How old do you think i am');
 
 for (let i = 0; i < 3; i++) {
     if (myAge > 25) { 
-        alert ( 'too high');
+        alert ( 'too high 😯');
         myAge = prompt('How old do you think i am');
     }
      if (myAge < 25) {
-        alert('too low , but thank you');
+        alert('too low , but thank you 🙈');
         myAge = prompt('How old do you think i am');
     }
 }    if (myAge == 25) {
@@ -99,4 +102,3 @@ else { alert ( ' try again' )
 }} 
 
 alert ( 'your score is ' + counter); 
-

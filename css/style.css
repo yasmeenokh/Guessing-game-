@@ -1,28 +1,57 @@
+body {
+    background-color: #fcf8ec; 
+    color: #456268;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.first {
+    margin: 10px;
+    text-align: left;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    color: #456268; 
+    
+}
+.intro {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+h3 { 
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
 h1 {
     text-align: center;
-    color: #822659;
+    margin: 10px;
     padding: 10px;
 }
-
-h3 {
-    text-align: center;
-    color: #822659;
-}
-
-main ul li:nth-child(odd) {
-    background-color: #c6a9a3;
-    padding: 5px;
-    color: #383e56;
-}
-main ul li:nth-child(even) {
-    background-color: #99bbad;
-    padding: 5px;
-    color: #351f39;
-}
-
-.intro {
+.movies {
+    margin: 10px;
     padding: 10px;
     text-align: center;
-    color: #0f1123;
+}
+.list1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: left; 
+    
+
 }
 
+    
+
+
+.list2 {
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+
+}
+.songs {
+    margin: 10px;
+    padding: 10px;
+    text-align: center; 
+}
