@@ -1,13 +1,20 @@
 'use strict';
 let counter = 0; 
+function yourName()
+{
 let userName = prompt('What is your name?');
 while (userName == null || userName == '') {
     userName = prompt("please enter your name");
 };
 alert('We are glad to have you  ' + userName +  ' 😀 ');
+return userName; 
+}
+yourName(); 
 
+const question1= function()
+{
 let courseCompletion = prompt('Do you think i will finish this course?');
-// console.log(courseCompletion); 
+
 
 courseCompletion = courseCompletion.toLowerCase()
 while (courseCompletion !== 'yes' && courseCompletion !== 'y' && courseCompletion !=='no' && courseCompletion !=='n' ) {
@@ -21,10 +28,13 @@ if (courseCompletion === 'yes' || courseCompletion === 'y') {
 
 if (courseCompletion === 'no' || courseCompletion === 'n') {
     alert('Ohh, why do you think that 😔!!');
-}
+return courseCompletion;
+}};
+question1(); 
 
+const question2 =function()
+{
 let gamingLove = prompt('Do you think i enjoy gaming?');
-// console.log(gamingLove);
 
 while (gamingLove.toLowerCase() !== 'yes' && gamingLove.toLowerCase() !== 'y' && gamingLove.toLowerCase() !=='no' && gamingLove.toLowerCase() !=='n' ) {
     gamingLove = prompt('Do you think i enjoy gaming?');
@@ -36,11 +46,13 @@ if (gamingLove.toLowerCase() === 'yes' || gamingLove.toLowerCase() === 'y') {
 if (gamingLove.toLowerCase() === 'no' || gamingLove.toLowerCase() === 'n') {
     alert('i am glad you had that right');
     counter++;
-}
+    return gamingLove;
+}};
+question2();
 
-
+const question3 = function()
+{
 let firstImp = prompt('Did i leave a good first impression?');
-// console.log(firstImp);
 
 while (firstImp.toLowerCase() !== 'yes' && firstImp.toLowerCase() !== 'y' && firstImp.toLowerCase() !=='no' && firstImp.toLowerCase() !=='n' ) {
     firstImp = prompt('Did i leave a good first impression?');
@@ -53,12 +65,13 @@ if (firstImp.toLowerCase() === 'yes' || firstImp.toLowerCase() === 'y') {
 }
 if (firstImp.toLowerCase() === 'no' || firstImp.toLowerCase() === 'n') {
     alert('sorry to hear that, where did i go wrong 💔?');
-}
+return firstImp;
+}};
+question3();
 
-
-
+const question4 = function()
+{
 let myPhobia = prompt('To your knowledge do i have any phobias?');
-// console.log(myPhobia); 
 
 while (myPhobia.toLowerCase() !== 'yes' && myPhobia.toLowerCase() !== 'y' && myPhobia.toLowerCase() !=='no' && myPhobia.toLowerCase() !=='n' ) {
     myPhobia = prompt('To your knowledge do i have any phobias?');
@@ -70,10 +83,13 @@ if (myPhobia.toLowerCase() === 'yes' || myPhobia.toLowerCase() === 'y') {
 }
 if (myPhobia.toLowerCase() === 'no' || myPhobia.toLowerCase() === 'n') {
     alert('Unfortunately not true');
-}
+return myPhobia;
+}};
+question4();
 
+const question5 =function()
+{
 let tryNew = prompt('Do i like to try new things?');
-// console.log(tryNew);
 
 while (tryNew.toLowerCase() !== 'yes' && tryNew.toLowerCase() !== 'y' && tryNew.toLowerCase() !=='no' && tryNew.toLowerCase() !=='n' ) {
     tryNew = prompt('Do i like to try new things?');
@@ -84,12 +100,13 @@ if (tryNew.toLowerCase() === 'yes' || tryNew.toLowerCase() === 'y') {
 }
 if (tryNew.toLowerCase() === 'no' || tryNew.toLowerCase() === 'n') {
     alert('how else can we learn!');
-}
+return tryNew;
+}};
+question5();
 
-
-
+const question6 = function()
+{
 let myAge = prompt('How old do you think i am');
-
 
 for (let i = 0; i < 3; i++) {
     if (myAge > 25) { 
@@ -103,11 +120,17 @@ for (let i = 0; i < 3; i++) {
 
 }    
 
-if  (myAge == 25) {
+    if  (myAge == 25) {
     alert ('good guess');
     counter++; 
 
-} 
+}
+return myAge;
+};
+question6();
+
+const question7 =function()
+{
 let favFood = ['oriental', 'chinese','indian'] 
 let favFoodAns = prompt ( 'what is my favourite type of food?'); 
 for (let i = 0; i < 5; i++) {
@@ -120,9 +143,10 @@ break;
 }
 
 else { alert ( ' try again' )
- favFoodAns = prompt ( 'what is my favourite type of food?'); 
+ favFoodAns = prompt ( 'what is my favourite type of food?');}
+return favFoodAns;
+}};
 
- 
-}} 
+question7();
 
-alert ( 'your score is ' + counter); 
+alert ( 'your score is ' + counter)
